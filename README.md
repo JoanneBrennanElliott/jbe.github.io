@@ -1,1 +1,1 @@
-# JBE.github.io
+# jbe.github.io
