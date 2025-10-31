@@ -22,34 +22,5 @@ KEY SKILLS
 
 · PL/SQL
 
-· Object-Oriented Programming (OOP)
+·
 
-· Ubuntu
-
-· SQL
-
-· Git
-
-· MySQL
-
-· Java
-
-· Docker Products
-
-· Computer Science
-
-· JavaScript
-
-· Visual Paradigm
-
-· Programming
-
-· Databases
-
-· Object-oriented Software
-
-· Operating Systems
-
-· Oracle Database
-
-· HTML · VMware · Computer Architecture

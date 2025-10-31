@@ -1,0 +1,127 @@
+<!-- Student Name: Joanne Brennan Elliott -->
+<!-- Student Number: X23410001-->
+<!-- Web Design and Client Side Scripting -->
+<!-- Week 3 Lab 03.10.2025 
+ 	Plus Week 6 Lab 30.10.2025 
+
+/*FlexBox responsive design.
+Task - Have 3 columns at some point in the design - added 3 cols under Licences and Certifications header
+Use Justified Content - my .certificateclass contains justify-content
+Use a media query to change some aspect of your design at smaller widths 
+I used the @media screen to change the background_colour from pink to green body if the screen narrows
+
+
+Additions for week 6 Lab
+Take a copy of your existing CV site and modify it to use Bootstrap as its grid system.
+ You may also use any of the Bootstrap components that you like, but you will be graded on your 
+ responsive design using Bootstrap. 
+
+When you have completed your work, commit it to GitHub and submit a Word/Text document
+ with a link to the repository.
+-->
+ 
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My CV here!</title>
+				<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>		<link rel="stylesheet" href="style.css"/>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Joanne Brennan Elliott">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	
+<body>
+
+	
+
+		<div id="header">
+		<div id="header1"><img src="images/ScreenshotMe.png" height="200" width="200" alt="Joanne Logo">
+		</div>
+
+		<h1 id="name"> Joanne Brennan Elliott</h1>
+		
+		<p class="intro">NCI Graduate in Cert in Science in Computing
+		<br> Top skills include Oracle Database • FileNet • Visual Studio • Visual Basic • PowerBuilder</p>
+
+
+		<div class="row">
+				<div class="col-lg-2 show">
+					<div class="card mb-3">
+						<img src="images/cat4.jpg" class="card-img-top" alt="Tabby cat curled up and sleeping on a sunlit sofa, paws tucked under chin; calm and relaxed mood. ">
+						<div class="card-body">
+							<h5 class="card-title">Cat</h5>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						</div>
+					</div>
+				</div>
+			
+				<div class="col-lg-2 show">
+				<h1>Col2</h1>
+			</div>
+
+			<div class="col-lg-2 show">
+				<h1>Col3</h1>
+			</div>			
+				
+			<div class="col-lg-2 show">
+				<h1>Col4</h1>
+			</div>
+		</div>
+		
+		<h2 id="education"> Education </h2>
+			<ul class= "educationclass">
+				<li>Third Level  - Cert in Computing 2024</li>
+				<li>Secondary - Leaving Certificate 1995</li>
+			</ul>
+			
+		<h2 id="experience" >Experience</h2>
+			<ul class= "workexperience">
+				<li>Programming - Java, MySQL, Databases</li>
+				<li>Volunteer Work</li>
+				<li>First Aid Training</li>
+				<li>Computer Science</li>
+				<li>Customer Service</li>
+				<li>Certificates</li>
+			</ul>
+			
+		<h2 id="certificate" >Licences and Certifications</h2>
+			<div class= "certificateclass">
+					<div>
+						<h3>Child Safeguarding Certificate <br>  </h3>
+						<h4>Tusla - Child and Family Agency </h4>
+					</div>
+					<div>
+						<h3>Adult and Pediatric First Aid/CPR/AED <br> </h3>
+						<h4>Irish Heart Foundation</h4>
+					</div>
+					
+	
+					<div>
+						<h3>Dual Certification in Coaching Camogie and Gaelic Football <br> </h3>
+						<h4>Camogie Association </h4>
+					</div>
+			</div>
+			
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			
+				
+		<h2  ><br></h2>
+		
+		<h2 id="volunteering" ><br>Volunteering</h2>
+		
+		<ul class= "volunteerclass">
+			<li>U15 girls football and camogie coach</li>
+			<li>Community Volunteer</li>
+		</ul>
+			
+					
+</body>	
+
+</html>

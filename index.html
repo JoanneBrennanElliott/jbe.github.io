@@ -3,78 +3,162 @@
 <!-- Web Design and Client Side Scripting -->
 <!-- Week 3 Lab 03.10.2025 
 
-/*FlexBox responsive design.
-Task - Have 3 columns at some point in the design - added 3 cols under Licences and Certifications header
-Use Justified Content - my .certificateclass contains justify-content
-Use a media query to change some aspect of your design at smaller widths 
-I used the @media screen to change the background_colour from pink to green body if the screen narrows
+
+Week 6 Lab 30.10.2025  	Additional work added 
+FlexBox responsive Altered to use Bootstrap grid system
+
+Additions for week 6 Lab
+Modified it to use Bootstrap as its grid system.
+Added Bootstrap framework to the CV page.
+Added Bootstrap CSS and JS links to the head of the HTML document.
+Added Bootstrap classes to the HTML elements to create a responsive layout.
+Added a container class to wrap the entire content for proper alignment and padding.
+Used row and col classes to create a grid layout for different sections of the CV.
+Added text-center class to center-align text in certain sections.
+Added margin and padding classes to improve spacing between elements.
+Used Bootstrap's card component classes to style the certifications section.
+
+Assignment Instructions:
+ You may also use any of the Bootstrap components that you like, but you will be graded on your 
+ responsive design using Bootstrap. 
+
+When you have completed your work, commit it to GitHub and submit a Word/Text document
+ with a link to the repository.
 -->
- 
 
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>My CV here!</title>
-		<link rel="stylesheet" href="style.css">
+		<title>My CV!</title>    <!-- Title of the webpage -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>	
+		<link rel="stylesheet" href="style/style.css"/>    <!-- Link to external CSS file -->
+		
 	</head>
-	
-<body>
-		<h1 id="name"> Joanne Brennan Elliott</h1>
-		
-		<p class="intro">NCI Graduate in Cert in Science in Computing
-		<br> Top skills include Oracle Database • FileNet • Visual Studio • Visual Basic • PowerBuilder</p>
+	<body>
+		<!-- Main container for the CV content -->
+		<div class="container" >   						<!-- My Bootstrap container class -->    
+			<div class="row" >							<!-- Name Section -->
+				<div class="col-lg-12 show">			<!-- Full width column -->
+					<h1>Joanne Brennan Elliott</h1>		<!-- Name Header -->
+				</div>
+			</div>	
 
-		
-		<h2 id="education"> Education </h2>
-			<ul class= "educationclass">
-				<li>Third Level  - Cert in Computing 2024</li>
-				<li>Secondary - Leaving Certificate 1995</li>
-			</ul>
-			
-		<h2 id="experience" >Experience</h2>
-			<ul class= "workexperience">
-				<li>Programming - Java, MySQL, Databases</li>
-				<li>Volunteer Work</li>
-				<li>First Aid Training</li>
-				<li>Computer Science</li>
-				<li>Customer Service</li>
-				<li>Certificates</li>
-			</ul>
-			
-		<h2 id="certificate" >Licences and Certifications</h2>
-			<div class= "certificateclass">
-					<div>
-						<h3>Child Safeguarding Certificate <br>  </h3>
-						<h4>Tusla - Child and Family Agency </h4>
-					</div>
-					<div>
-						<h3>Adult and Pediatric First Aid/CPR/AED <br> </h3>
-						<h4>Irish Heart Foundation</h4>
-					</div>
-					
-					<div>
-						<h3>Dual Certification in Coaching Camogie and Gaelic Football <br> </h3>
-						<h4>Camogie Association </h4>
-					</div>
+			<!-- Qualification Section -->	
+			<div class="row">						
+				<div class="col-lg-12  show">		<!-- Full width column -->
+					<h1>NCI Graduate in Certificate in Science in Computing</h1>  	<!-- Qualification Header -->
+				</div>
+			</div>	
+
+			<!-- Contact Information -->
+			<div class="row" >     
+				<div class="col-lg-12 show">		<!-- Full width column -->
+						<a href="mailto:joannebrennaelliott@gmail.com" target="_blank">  <h3>Email: JoanneBrennanElliott@gmail.com</h3><br></a>
+				</div>
 			</div>
 			
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			
-				
-		<h2  ><br></h2>
-		
-		<h2 id="volunteering" ><br>Volunteering</h2>
-		
-		<ul class= "volunteerclass">
-			<li>U15 girls football and camogie coach</li>
-			<li>Community Volunteer</li>
-		</ul>
-			
-					
-</body>	
+			<!-- LinkedIn Section -->
+			<div id="linkedIn"> <a href="https://www.linkedin.com/in/joanne-brennanelliott/" target="_blank"><h3>My LinkedIn page</h3><br></a>		
+			</div>
 
+			<!-- Skills Section -->
+			<div class="row" >						<!-- Top Skills -->
+				<div class="col-lg-12 show">		<!-- Full width column -->
+					<h3>Top skills include Oracle Database • FileNet • Visual Studio • Visual Basic • PowerBuilder</h3>
+				</div>
+			</div>	
+
+			<!-- Profile Section -->
+			<div class="row">						<!-- Profile Summary -->
+				<div class="col-lg-12  show">		<!-- Full width column -->
+					<h5>Currently studying at National College of Ireland for Certificate in Computing 
+					to up-skill after taking a career break. Previously had been a qualified and professional 
+					Software Developer with 11 years experience in the IT industry. 
+					Self motivated with excellent communication skills and customer service skills. 
+					I am an enthusiastic and driven individual with strong analytical and problem 
+					solving skills with the ability to work as part of a team in a highly
+					pressurised environment and meet tight deadlines. I am looking for an 
+					opportunity with a progressive company where I can utilise and develop my 
+					existing and newly acquired skills at NCIRL to re-engage my career in this industry.</h5>
+				</div>
+			</div>
+			
+			<!-- Education Section -->
+			<div class="edu">					<!-- Education Details -->	
+			  <h3>Education:</h3>				<!-- Education Header -->
+			  <ul>								<!-- Unordered list for education items -->
+				<li>Certificate in Science in Computing	: National College of Ireland, Dublin 2024</li>
+				<li>FETEC Level 5 in Childcare : Dorset College Dublin, Dublin 2005</li>
+				<li>Diploma in Computing : Programming Technological University Dublin, Dublin 1998</li>
+				<li>Leaving Certificate : Sancta Maria College, Rathfarnham Dublin 1995</li>
+			  </ul>
+			</div>
+			
+			<!-- Work Experience Section -->
+			<div class="row" >			<!-- Work Experience Details -->
+				<div class="col-lg-12  show">		<!-- Full width column -->
+					<h4>Work Experience :</h4>
+				</div>
+				<div class="col-lg-6 show">		<!-- Half width column -->
+					<h4>Senior Software Developer</h4>
+					<h6>Integrity Software, ParkWest, Dublin</h6>
+					<h6>May 2006 - May 2010</h6>
+				</div>
+				
+				<div class="col-lg-6 show">		<!-- Half width column -->
+					<h4>Senior Support Developer</h4>
+					<h6>Phoenix Technology Group , Dublin</h6>
+					<h6> June 1998 to Jan 2006</h6>
+				</div>
+			</div>	
+
+			<!-- Licences and Certifications Section -->
+			<div class="row">
+				<div class="col-lg-12  show">		<!-- Full width column -->
+					<h4>Licences and Certifications:</h4>
+				</div>
+			</div>
+			
+			<div class="container text-center">  	<!-- Bootstrap container for certifications -->
+				<div class="row align-items-start" style="margin-top:5px">
+					<div class="col">			
+					<h6 class="card-title">Child Safeguarding Certificate</h6>
+						Tusla - Child and Family Agency
+					</div>
+					
+					<div class="col">
+						<h6 class="card-title">Adult and Pediatric First Aid/CPR/AED</h6>
+							 Irish Heart Foundation
+					</div>
+					
+					<div class="col">
+						<h6 class="card-title">Dual Certification in Coaching Camogie and Gaelic Football </h6>
+							  Camogie Association
+					</div>
+			  </div>
+			</div>
+			
+			<div class="interests">		<!-- Interests Section -->	
+				<h3>Interests:</h3>		<!-- Interests Header -->
+				<ul>				<!-- Unordered list for interests -->
+					<li>I really enjoy reading and watching TV and films and crime documentaries in my downtime.</li>
+					<li>For my wellness, I run weekly at my local Park run. I participate in an annual yoga retreat 
+						that helps improve my yoga practice and recently signed up to Reformer Pilates which i am really enjoying.</li>
+					<li>I actively volunteer weekly at my local community group.</li>
+					<li>I coach GAA camogie and football to the U14 twice weekly, as part of this role I also 	coordinate teams, 
+					team sheets and pitch allocation, with the girls recently winning the U14 Division 12 football final. </li>
+				</ul>
+			</div>
+		
+
+				<div class="row" >			<!-- References Section -->	
+				<div class="col-lg-12 show">	<!-- Full width column -->
+					<h3></h3>References available upon request</h3>			
+				</div>
+			</div>	
+	</div>
+		
+		
+	</body>	
 </html>
